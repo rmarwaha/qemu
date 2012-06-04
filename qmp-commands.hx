@@ -2142,3 +2142,8 @@ EQMP
         .args_type  = "implements:s?,abstract:b?",
         .mhandler.cmd_new = qmp_marshal_input_qom_list_types,
     },
+    {
+        .name       = "query-tpm",
+        .args_type  = "",
+        .mhandler.cmd_new = qmp_marshal_input_query_tpm,
+    },
